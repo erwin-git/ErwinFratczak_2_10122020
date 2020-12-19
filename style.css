@@ -1,10 +1,59 @@
-.menu1{
-    display: flex;
-    justify-content: flex-end;
-   
+/*menu1*/
+/*links*/
+div.menu1 a:link{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+}
+div.menu1 a:visited{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+}
+div.menu1 a:hover{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+}
+div.menu1 a:active{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+}
+/*boxing*/
+div.menu1 a{
+    margin: 30px;
+    padding-top: 30px;
+    position: relative;
+    top: -26px; left: 500px;
+    
 }
 
+    
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*main*/
+main h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
 
 
 
@@ -14,7 +63,7 @@
 
 
 .hebergement {
-    font-style: ;
+    
     width: 500px;
     
 }
