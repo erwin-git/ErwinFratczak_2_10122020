@@ -1,10 +1,34 @@
-/*menu1*/
-/*links*/
+/*CSS Grid - header*/
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "logo menu1";
+}
+#logo {
+    grid-area: logo;
+    justify-self: self-start;
+}
+.menu1 {
+    grid-area: menu1;
+    justify-self: self-end;
+    font-size: 15px
+}
+
+
+
+
+
+/*links - menu1*/
 div.menu1 a:link{
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     text-decoration: none;
     color: black;
+    margin: 0px 15px;
+    padding: 38px 15px;
+    
 }
 div.menu1 a:visited{
     font-family: 'Raleway', sans-serif;
@@ -17,53 +41,27 @@ div.menu1 a:hover{
     font-weight: 100;
     text-decoration: none;
     color: #0065FC;
-    border-top: 1px solid #0065FC;
+    border-top: 3px solid #0065FC;
 }
 div.menu1 a:active{
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     text-decoration: none;
     color: #0065FC;
-    border-top: 1px solid #0065FC;
-}
-/*boxing*/
-div.menu1 a{
-    margin: 30px;
-    padding-top: 30px;
-    position: relative;
-    top: -26px; left: 500px;
-    
+    border-top: 3px solid #0065FC;
 }
 
     
 
 
 
+body{
+    margin: 40px 50px 50px;
+}   
+
+*/
 
 
 
 
 
-
-
-
-
-
-/*main*/
-main h2{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
-
-
-
-.filter{
-    display: flex;
-}
-
-
-.hebergement {
-    
-    width: 500px;
-    
-}
