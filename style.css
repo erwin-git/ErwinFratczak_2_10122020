@@ -9,16 +9,49 @@ header {
 #logo {
     grid-area: logo;
     justify-self: self-start;
+    margin-bottom: 10px;
+
 }
 .menu1 {
     grid-area: menu1;
     justify-self: self-end;
-    font-size: 15px
+    font-size: 16px
+}
+
+/*CSS Grid - nav*/
+nav {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "slogan"
+        "searchingbar"
+        "filter"
+        "info";
+}
+#slogan {
+    grid-area: slogan;
+}
+#searchingbar {
+    grid-area: searchingbar;
+}
+#filter {
+    grid-area: filter;
+}
+#info {
+    grid-area: info;
 }
 
 
 
 
+
+
+/*body*/
+body{
+    margin: 40px 50px 50px;
+}  
 
 /*links - menu1*/
 div.menu1 a:link{
@@ -28,7 +61,6 @@ div.menu1 a:link{
     color: black;
     margin: 0px 15px;
     padding: 38px 15px;
-    
 }
 div.menu1 a:visited{
     font-family: 'Raleway', sans-serif;
@@ -51,17 +83,140 @@ div.menu1 a:active{
     border-top: 3px solid #0065FC;
 }
 
-    
+/*nav - slogan */
+#slogan h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#slogan p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+      margin-top: 5px;
+}
 
-
-
-body{
-    margin: 40px 50px 50px;
-}   
-
-*/
-
-
-
-
-
+/*nav - searching*/
+#mapmarker {
+    border: 1px solid #F2F2F2;
+    padding: 15px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    float: left;   
+    font-size: 19px; 
+}
+#searchform {
+    border: 1px solid #F2F2F2;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-right: 0px;
+    float: left;
+    }
+#searchbutton {
+    border: 1px solid #0065FC;
+    padding: 15px;
+    background-color: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #F2F2F2;    
+}
+#searchbutton:hover {
+    border: 1px solid #F2F2F2;
+    padding: 15px;
+    background-color: #F2F2F2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #0065FC;  
+}
+/*nav - filters*/
+#filter h3{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    float: left;
+    margin-right: 40px; 
+}
+#money i {
+    border: 1px solid #DEEBFF;
+    padding: 15px 12px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    float: left;   
+    font-size: 19px; 
+}
+#money a {
+    border: 3px solid #F2F2F2;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-right: 0px;
+    float: left; 
+    margin-right: 40px;
+    border-radius: 50px;
+}
+#kid i {
+    border: 1px solid #DEEBFF;
+    padding: 15px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    float: left;   
+    font-size: 19px; 
+}
+#kid a {
+    border: 1px solid #F2F2F2;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-right: 0px;
+    float: left; 
+    margin-right: 40px;
+    border-radius: 50px;
+}
+#heart i {
+    border: 1px solid#DEEBFF;
+    padding: 15px 12px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    float: left;   
+    font-size: 19px; 
+}
+#heart a {
+    border: 1px solid #F2F2F2;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-right: 0px;
+    float: left; 
+    margin-right: 40px;
+    border-radius: 50px;
+}
+#dog i {
+    border: 1px solid#DEEBFF;
+    padding: 15px 12px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    float: left;   
+    font-size: 19px; 
+}
+#dog a {
+    border: 1px solid #F2F2F2;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-right: 0px;
+    float: left; 
+    margin-right: 40px;
+    border-radius: 50px;
+}

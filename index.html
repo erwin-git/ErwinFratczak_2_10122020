@@ -27,49 +27,47 @@
 
         <nav>
             <!--title and slogan-->
-            <div>
+            <div id="slogan">
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
 
             <!--searching bar-->
-            <div class="searchingbar">
-                <i class="fas fa-map-marker-alt"></i>
-                 <!--
-                    form
-                    button
-                -->
+            <div id="searchingbar">
+                <i id="mapmarker" class="fas fa-map-marker-alt" ></i>
+                <input type="search" id="searchform" placeholder="Recherche ...">
+                <button type="submit" id="searchbutton" value="Submit">Rechercher</button>
             </div>
 
-            <!--filters-->
-            <h3>Filtres</h3>
-            <div class="filter">                
-                <div>
+            <!--filters-->            
+            <span id="filter">
+                <h3>Filtres</h3>               
+                <div id="money">
                     <i class="fas fa-money-bill-wave" style="font-size: 20px; color: #0065FC;"></i>
                     <a href="">Économique</a>
                 </div>
 
-                <div>
+                <div id="kid">
                     <i class="fas fa-child" style="font-size: 20px; color: #0065FC;"></i>
                     <a href="">Familial</a>
                 </div>
 
-                <div>
+                <div id="heart">
                     <i class="fas fa-heart" style="font-size: 20px; color: #0065FC;"></i>
                     <a href="">Romantique</a>
                 </div>
 
-                <div>
+                <div id="dog">
                     <i class="fas fa-dog" style="font-size: 20px; color: #0065FC;"></i>
                     <a href="">Animaux autorisés</a>
                 </div>
-            </div>
+            </span>
 
             <!--info-->
-            <div>
+            <span id="info">
                 <i class="fas fa-info" style="font-size: 15px; color: #0065FC;"></i>
-                <span class="info">Plus de 500 logement sont disponibles dans cette ville</span>
-            </div>
+                <p>Plus de 500 logement sont disponibles dans cette ville</p>
+            </span>
         </nav>
 
         <main>
