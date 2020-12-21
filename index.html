@@ -8,68 +8,70 @@
         <title>Reservia</title>        
         <link rel="stylesheet" type="text/css" href="/style.css">
         <script src="https://kit.fontawesome.com/27adaf2d33.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-
             <!--logo-->
-            <img src="../images/logo/Reservia.svg" alt="logo de site">
+            <img id="logo" src="../images/logo/Reservia.svg" alt="logo de site">
 
             <!--first menu-->
             <div class="menu1">
-                <a href="">Hébergement</a>
+                <a href="">Hébergements</a>
                 <a href="">Activités</a>
-                <a href="">S'inscrire</a>
+                <a style="color:#0065FC; font-weight:700" href="">S'inscrire</a>
             </div>
         </header>
 
-        <main>
+        <nav>
             <!--title and slogan-->
-            <div>
+            <div id="slogan">
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
 
             <!--searching bar-->
-            <div class="searchingbar">
-                <i class="fas fa-map-marker-alt"></i>
-                 <!--
-                    form
-                    button
-                -->
-            </div>
+            <span id="searchingbar">
+                <i id="mapmarker" class="fas fa-map-marker-alt" ></i>
+                <input type="search" id="searchform" placeholder="Recherche ...">
+                <button type="submit" id="searchbutton" value="Submit">Rechercher</button>
+            </span>
 
-            <!--filters-->
-            <h3>Filtres</h3>
-            <div class="filter">                
-                <div>
-                    <i class="fas fa-money-bill-wave" style="font-size: 20px; color: #0065FC;"></i>
-                    <p>Économique</p>
+            <!--filters-->            
+            <div id="filter">
+                <h3>Filtres</h3>               
+                <div id="money">
+                    <a class="btn" href="">
+                    <i class="fas fa-money-bill-wave" style="font-size: 20px; color: #0065FC;"></i>Économique</a>
+                    
                 </div>
 
-                <div>
-                    <i class="fas fa-child" style="font-size: 20px; color: #0065FC;"></i>
-                    <p>Familial</p>
-                </div>
+                <span id="kid">
+                    <a class="btn" href="">
+                    <i class="fas fa-child" style="font-size: 20px; color: #0065FC;"></i>Familial</a>
+                </span>
 
-                <div>
-                    <i class="fas fa-heart" style="font-size: 20px; color: #0065FC;"></i>
-                    <p>Romantique</p>
-                </div>
+                <span id="heart">
+                    <a class="btn" href="">
+                    <i class="fas fa-heart" style="font-size: 20px; color: #0065FC;"></i>Romantique</a>
+                </span>
 
-                <div>
-                    <i class="fas fa-dog" style="font-size: 20px; color: #0065FC;"></i>
-                    <p>Animaux autorisés</p>
-                </div>
+                <span id="dog">
+                    <a class="btn" href="">
+                    <i class="fas fa-dog" style="font-size: 20px; color: #0065FC;"></i>Animaux autorisés</a>
+                </span>
             </div>
 
             <!--info-->
-            <div>
-                <i class="fas fa-info" style="font-size: 15px; color: #0065FC;"></i>
-                <p class="info">Plus de 500 logement sont disponibles dans cette ville</p>
-            </div>
+            <span id="info">
+                <i class="fas fa-info" style="font-size: 12px; color: #0065FC;"></i>
+                <p>Plus de 500 logement sont disponibles dans cette ville</p>
+            </span>
+        </nav>
 
+        <main>
             <!--6 images top-->
             <article class="hebergement">
                 <h2>Hébergement à Marseille</h2>
@@ -81,7 +83,7 @@
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                    <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                    <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
                 </div>
                 <div>
                     <img src="../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
@@ -101,7 +103,7 @@
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                    <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                    <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
                 </div>
                 <div>
                     <img src="../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
@@ -110,8 +112,8 @@
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                    <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                    <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                    <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                    <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
                 </div>
                 <div>
                     <img src="../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
@@ -121,7 +123,7 @@
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                    <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                    <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
                 </div>
                 <div>
                     <img src="../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
@@ -158,7 +160,7 @@
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                    <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                    <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
                 </div>
                 <div>
                     <img src="../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
@@ -168,7 +170,7 @@
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
                     <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                    <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                    <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
                 </div>
             </article>
 

@@ -1,0 +1,318 @@
+/*CSS Grid - header*/
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "logo menu1";
+}
+#logo {
+    grid-area: logo;
+    justify-self: self-start;
+    margin-bottom: 10px;
+
+}
+.menu1 {
+    grid-area: menu1;
+    justify-self: self-end;
+    font-size: 16px
+}
+
+/*CSS Grid - nav*/
+
+nav {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "slogan"
+        "searchingbar"
+        "filter"
+        "info";
+}
+#slogan {
+    grid-area: slogan;
+}
+#searchingbar {
+    grid-area: searchingbar;
+}
+#filter {
+    grid-area: filter;
+}
+#info {
+    grid-area: info;
+}
+
+
+
+
+
+
+/*body*/
+body{
+    margin: 40px 50px 50px;
+}  
+
+/*links - menu1*/
+/*coller les butons ensamble*/
+div.menu1 a:link{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+    margin: 0px 15px;
+    padding: 38px 15px;
+}
+div.menu1 a:visited{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+}
+div.menu1 a:hover{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+div.menu1 a:active{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+/*nav - slogan */
+#slogan h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#slogan p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+      margin-top: 5px;
+}
+
+/*nav - searching*/
+/*coller les butons ensamble*/
+#mapmarker {
+    border: 1px solid #F2F2F2;
+    padding: 15px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    float: left;   
+    font-size: 19px; 
+}
+#searchform {
+    border: 1px solid #F2F2F2;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-right: 0px;
+    float: left;
+    }
+#searchbutton {
+    border: 1px solid #0065FC;
+    padding: 15px;
+    background-color: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #F2F2F2;    
+}
+#searchbutton:hover {
+    border: 1px solid #F2F2F2;
+    padding: 15px;
+    background-color: #F2F2F2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #0065FC;  
+}
+/*nav - filters*/
+#filter h3{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    float: left;
+    margin-right: 40px; 
+}
+/*nav - buttons*/
+#money {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    transition: transform 0.5s;
+}
+#money i {
+    padding: 20px;
+    font-size: 16px;
+    background: #DEEBFF;
+    transform: translate(-40%);
+    border-radius: 80px; 
+    margin: -4px;
+    border: 4px solid #DEEBFF;;
+}
+#money a {
+    padding: 20px 30px 18px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 80px;
+    border: 4px solid #F2F2F2;
+}
+#money:hover  {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    box-shadow: 0px 0px 15px 5px #0065FC ;
+    transition: all 0.5s 0s ease;
+}
+#kid {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    transition: transform 0.5s;
+}
+#kid i {
+    padding: 20px;
+    font-size: 16px;
+    background: #DEEBFF;
+    transform: translate(-46%);
+    border-radius: 80px; 
+    margin: -4px;
+    border: 4px solid #DEEBFF;
+}
+#kid a {
+    padding: 20px 30px 18px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 80px;
+    border: 4px solid #F2F2F2;
+}
+#kid:hover  {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    box-shadow: 0px 0px 15px 5px #0065FC ;
+    transition: all 0.5s 0s ease;
+}
+#heart {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    transition: transform 0.5s;
+}
+#heart i {
+    padding: 20px;
+    font-size: 16px;
+    background: #DEEBFF;
+    transform: translate(-43%);
+    border-radius: 80px; 
+    margin: -4px;
+    border: 4px solid #DEEBFF;;
+}
+#heart a {
+    padding: 20px 30px 18px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 80px;
+    border: 4px solid #F2F2F2;
+}
+#heart:hover  {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    box-shadow: 0px 0px 15px 5px #0065FC ;
+    transition: all 0.5s 0s ease;
+}
+#money {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    transition: transform 0.5s;
+}
+#dog i {
+    padding: 20px;
+    font-size: 16px;
+    background: #DEEBFF;
+    transform: translate(-41%);
+    border-radius: 80px; 
+    margin: -4px;
+    border: 4px solid #DEEBFF;;
+}
+#dog a {
+    padding: 20px 30px 18px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 80px;
+    border: 4px solid #F2F2F2;
+}
+#dog:hover  {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    box-shadow: 0px 0px 15px 5px #0065FC ;
+    transition: all 0.5s 0s ease;
+}
+
+/*infobar*/
+#info {
+    display:inline-block;
+    float: left;
+    margin: 20px 0px 0px 0px;
+}
+#info i {
+    border-radius: 100%;
+    border: 2px solid #F2F2F2;
+    padding: 6px 9px 6px 9px;
+    display: inline;
+    margin-right: 10px;
+}
+#info p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color: black;
+    display: inline;
+}
