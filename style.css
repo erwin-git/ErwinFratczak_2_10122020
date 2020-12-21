@@ -160,7 +160,6 @@ div.menu1 a:active{
     font-size: 16px;
     background: #DEEBFF;
     transform: translate(-52%);
-    /*border: 2px solid #DEEBFF;*/
     border-radius: 80px; 
     margin: -4px;
 }
@@ -184,7 +183,6 @@ div.menu1 a:active{
     font-size: 16px;
     background: #DEEBFF;
     transform: translate(-63%);
-    /*border: 2px solid #DEEBFF;*/
     border-radius: 100%; 
     margin: -4px;
 }
@@ -208,7 +206,6 @@ div.menu1 a:active{
     font-size: 16px;
     background: #DEEBFF;
     transform: translate(-57%);
-    /*border: 2px solid #DEEBFF;*/
     border-radius: 80px; 
     margin: -4px;
 }
@@ -232,7 +229,6 @@ div.menu1 a:active{
     font-size: 16px;
     background: #DEEBFF;
     transform: translate(-54%);
-    /*border: 2px solid #DEEBFF;*/
     border-radius: 80px; 
     margin: -4px;
 }
@@ -244,5 +240,28 @@ div.menu1 a:active{
     text-decoration: none;
     color: black;
 }
+#info {
+    display:inline-block;
+    float:left;
+    margin: 20px 0px 0px 0px;
+    
+
+}
+#info i {
+    border-radius: 100%;
+    border: 2px solid #F2F2F2;
+    padding: 6px 9px 6px 9px;
+    display: inline;
+    margin-right: 10px;
 
 
+    
+}
+#info p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color: black;
+    display: inline;
+    
+     
+}
