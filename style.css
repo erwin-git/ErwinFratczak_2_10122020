@@ -147,105 +147,161 @@ div.menu1 a:active{
     float: left;
     margin-right: 40px; 
 }
-/*buttons*/
+/*nav - buttons*/
 #money {
     margin-right: 40px;
-    background: white;
-    border: 4px solid #F2F2F2;
+    background: transparent;
+    border: hidden;
     border-radius: 80px;
     float: left;
-    }
+    transition: transform 0.5s;
+}
 #money i {
-    padding: 16px;
+    padding: 20px;
     font-size: 16px;
     background: #DEEBFF;
-    transform: translate(-52%);
+    transform: translate(-40%);
     border-radius: 80px; 
     margin: -4px;
+    border: 4px solid #DEEBFF;;
 }
 #money a {
-    padding: 30px;
+    padding: 20px 30px 18px;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: black;
+    background: white;
+    border-radius: 80px;
+    border: 4px solid #F2F2F2;
+}
+#money:hover  {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    box-shadow: 0px 0px 15px 5px #0065FC ;
+    transition: all 0.5s 0s ease;
 }
 #kid {
     margin-right: 40px;
-    background: white;
-    border: 4px solid #F2F2F2;
+    background: transparent;
+    border: hidden;
     border-radius: 80px;
     float: left;
-    }
+    transition: transform 0.5s;
+}
 #kid i {
-    padding: 16px;
+    padding: 20px;
     font-size: 16px;
     background: #DEEBFF;
-    transform: translate(-63%);
-    border-radius: 100%; 
+    transform: translate(-46%);
+    border-radius: 80px; 
     margin: -4px;
+    border: 4px solid #DEEBFF;
 }
 #kid a {
-    padding: 30px;
+    padding: 20px 30px 18px;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: black;
+    background: white;
+    border-radius: 80px;
+    border: 4px solid #F2F2F2;
+}
+#kid:hover  {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    box-shadow: 0px 0px 15px 5px #0065FC ;
+    transition: all 0.5s 0s ease;
 }
 #heart {
     margin-right: 40px;
-    background: white;
-    border: 4px solid #F2F2F2;
+    background: transparent;
+    border: hidden;
     border-radius: 80px;
     float: left;
-    }
+    transition: transform 0.5s;
+}
 #heart i {
-    padding: 16px;
+    padding: 20px;
     font-size: 16px;
     background: #DEEBFF;
-    transform: translate(-57%);
+    transform: translate(-43%);
     border-radius: 80px; 
     margin: -4px;
+    border: 4px solid #DEEBFF;;
 }
 #heart a {
-    padding: 30px;
+    padding: 20px 30px 18px;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: black;
-}
-#dog {
-    margin-right: 40px;
     background: white;
+    border-radius: 80px;
     border: 4px solid #F2F2F2;
+}
+#heart:hover  {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
     border-radius: 80px;
     float: left;
-    }
+    box-shadow: 0px 0px 15px 5px #0065FC ;
+    transition: all 0.5s 0s ease;
+}
+#money {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    transition: transform 0.5s;
+}
 #dog i {
-    padding: 16px;
+    padding: 20px;
     font-size: 16px;
     background: #DEEBFF;
-    transform: translate(-54%);
+    transform: translate(-41%);
     border-radius: 80px; 
     margin: -4px;
+    border: 4px solid #DEEBFF;;
 }
 #dog a {
-    padding: 30px;
+    padding: 20px 30px 18px;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: black;
+    background: white;
+    border-radius: 80px;
+    border: 4px solid #F2F2F2;
 }
+#dog:hover  {
+    margin-right: 40px;
+    background: transparent;
+    border: hidden;
+    border-radius: 80px;
+    float: left;
+    box-shadow: 0px 0px 15px 5px #0065FC ;
+    transition: all 0.5s 0s ease;
+}
+
+/*infobar*/
 #info {
     display:inline-block;
-    float:left;
+    float: left;
     margin: 20px 0px 0px 0px;
-    
-
 }
 #info i {
     border-radius: 100%;
@@ -253,15 +309,10 @@ div.menu1 a:active{
     padding: 6px 9px 6px 9px;
     display: inline;
     margin-right: 10px;
-
-
-    
 }
 #info p {
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     color: black;
     display: inline;
-    
-     
 }
