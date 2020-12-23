@@ -1,3 +1,12 @@
+
+
+
+
+
+/*body*/
+body{
+    margin: 40px 50px 50px;
+}  
 /*CSS Grid - header*/
 header {
     display: grid;
@@ -17,59 +26,6 @@ header {
     justify-self: self-end;
     font-size: 16px
 }
-
-/*CSS Grid - nav*/
-nav {
-    display: grid;
-    justify-content: start;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "slogan"
-        "searchingbar"
-        "filter"
-        "info";
-}
-#slogan {
-    grid-area: slogan;
-}
-#searchingbar {
-    grid-area: searchingbar;
-}
-#filter {
-    grid-area: filter;
-}
-#info {
-    grid-area: info;
-}
-
-/*CSS Grid - main*/
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "hebergement hebergement populaires"
-        "activites activites activites";
-}
-.hebergement {
-    grid-area: hebergement;
-}
-.populaires{
-    grid-area: populaires;
-}
-.activites{
-    grid-area: activites;
-}
-
-
-
-
-/*body*/
-body{
-    margin: 40px 50px 50px;
-}  
-
 /*links - menu1*/
 /*coller les butons ensamble*/
 div.menu1 a:link{
@@ -101,6 +57,30 @@ div.menu1 a:active{
     border-top: 3px solid #0065FC;
 }
 
+/*CSS Grid - nav*/
+nav {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "slogan"
+        "searchingbar"
+        "filter"
+        "info";
+}
+#slogan {
+    grid-area: slogan;
+}
+#searchingbar {
+    grid-area: searchingbar;
+}
+#filter {
+    grid-area: filter;
+}
+#info {
+    grid-area: info;
+}
 /*nav - slogan */
 #slogan h2{
     font-family: 'Raleway', sans-serif;
@@ -331,15 +311,219 @@ div.menu1 a:active{
     color: black;
     display: inline;
 }
+/*-----------------------------------------------------------*/
+
+
+
+/*CSS Grid - main*/
+main {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(2);
+    grid-template-areas: 
+        "hebergement hebergement populaires"
+        "activites activites activites";
+}
+#hebergement {
+    grid-area: hebergement;
+    
+}
+#populaires{
+    grid-area: populaires;
+}
+#activites{
+    grid-area: activites;
+}
+
+#gallery {
+    display: grid;
+    grid-template-rows: repeat(2);
+    grid-template-columns: repeat(3);
+    grid-template-areas: 
+        "box box box"
+        "box box box";
+        /*border: solid 3px black;*/
+        /*margin: 40px;
+        justify-content: center;*/
+}
+#gallery2 {
+    display: grid;
+    grid-template-rows: repeat(3);
+    grid-template-columns: repeat(1);
+    grid-template-areas: 
+        "box2"
+        "box2"
+        "box2";
+}
+#gallery3 {
+    display: grid;
+    grid-template-rows: repeat(2);
+    grid-template-columns: repeat(4);
+    grid-template-areas: 
+        "box3 box3 box3 box3"
+        ". box3 . box3";
+    border: solid 3px black;
+    
+}
+/*.box2{
+    grid-template-columns: repeat(2);
+}*/
 
 /*main - hebergement*/
-.hebergement{
+#hebergement {
     background-color: #F2F2F2;
     border-radius: 25px;
-    padding: 40px 40px;
+    padding: 40px;
+    /*border: 5px solid #0065FC;*/
+    margin: 20px;
+
+    
+      
 }
-.populaires{
+#hebergement h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.box{
+    /*background-color: white;*/
+    border-radius: 25px;
+    /*border: 5px solid black;*/
+    margin: 40px 0px;
+    padding: auto;
+}
+.box img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 236px;
+    height: 114px;
+    object-fit: cover;
+}
+.box div {
+    /*border: solid 3px black;*/
+    padding: 11px 11px 11px 11px;
+    margin: 0px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    line-height: 0.5;    
+}
+#hebergement h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+/*main - populaires*/
+#populaires {
     background-color: #F2F2F2;
     border-radius: 25px;
-    padding: 40px 40px;
+    padding: 40px;
+    border: 5px solid #0065FC; 
+    margin: 20px;
+    
+     
+}
+#populaires h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+      
+
+}
+
+
+.box2{
+    /*background-color: chartreuse;*/
+    border-radius: 25px;
+    /*border: 5px solid blue;*/
+    margin: 40px auto;
+    padding: auto;
+    width: 343px;
+    height: 144px;
+}
+.box2 img {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 127px;
+    height: 134px;
+    object-fit: cover;
+    float: left;
+    padding: 5px ;
+}
+.box2 div {
+    /*border: solid 3px red;*/
+    padding: 0px;
+    line-height: 1;    
+    width: 346px;
+    height: 140px;
+    margin: 0px;
+
+}
+
+
+
+#activites h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.box3 {
+    /*background-color: chartreuse;*/
+    border-radius: 25px;
+    /*border: 5px solid black;*/
+    margin: 40px auto;
+    padding: auto;
+}
+.box3 img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 236px;
+    height: 114px;
+    object-fit: cover;
+}
+
+.pop {
+    display: flex;
+    justify-content:space-between;
+}
+.pop i {
+    margin-top: 23px;
+}
+
+
+
+
+
+
+
+/*footer*/
+footer {
+    display: flex;
+    flex-flow: row ;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color: #F2F2F2;
+    margin: 0px -50px -50px -50px;
+    padding: 50px;
+    line-height: 2; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.apropos {
+    margin-right: 15%;
+}
+.noshebergements{
+    margin-right: 15%;
+}
+.assistance {
+    margin-right: 15%;
+}
+.info a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
 }
