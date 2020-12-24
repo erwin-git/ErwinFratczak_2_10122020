@@ -1,13 +1,8 @@
-
-
-
-
-
-/*body*/
+/*------------------------------BODY-------------------------------------*/
 body{
     margin: 40px 50px 50px;
 }  
-/*CSS Grid - header*/
+/*-----------------------------HEADER------------------------------------*/
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,15 +14,14 @@ header {
     grid-area: logo;
     justify-self: self-start;
     margin-bottom: 10px;
-
 }
+/*-------------------------------MENU-------------------------------------*/
+/*coller les butons ensamble*/
 .menu1 {
     grid-area: menu1;
     justify-self: self-end;
     font-size: 16px
 }
-/*links - menu1*/
-/*coller les butons ensamble*/
 div.menu1 a:link{
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
@@ -56,8 +50,7 @@ div.menu1 a:active{
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
-
-/*CSS Grid - nav*/
+/*----------------------------NAV----------------------------------------*/
 nav {
     display: grid;
     justify-content: start;
@@ -81,7 +74,7 @@ nav {
 #info {
     grid-area: info;
 }
-/*nav - slogan */
+/*-------------------------SLOGAN----------------------------------------*/
 #slogan h2{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -92,8 +85,7 @@ nav {
     font-weight: 100;
       margin-top: 5px;
 }
-
-/*nav - searching*/
+/*-------------------------SEARCHING---------------------------------------*/
 /*coller les butons ensamble*/
 #mapmarker {
     border: 1px solid #F2F2F2;
@@ -135,7 +127,7 @@ nav {
     font-weight: 700;
     color: #0065FC;  
 }
-/*nav - filters*/
+/*------------------------------FILTER-------------------------------------*/
 #filter h3{
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
@@ -143,7 +135,6 @@ nav {
     float: left;
     margin-right: 40px; 
 }
-/*nav - buttons*/
 #money {
     margin-right: 40px;
     background: transparent;
@@ -293,7 +284,7 @@ nav {
     transition: all 0.1s 0s ease;
 }
 
-/*nav - infobar*/
+/*----------------------------INFOBAR-----------------------------------*/
 #info {
     display:inline-block;
     margin: 20px 0px 0px 0px;
@@ -311,31 +302,39 @@ nav {
     color: black;
     display: inline;
 }
-/*-----------------------------------------------------------*/
-
-
-
-/*CSS Grid - main*/
+/*---------------------MAIN------------------------------------------*/
 main {
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: repeat(3);
-    grid-template-rows: repeat(2);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
         "hebergement hebergement populaires"
-        "activites activites activites";
+        "activites activites activites ";
 }
 #hebergement {
     grid-area: hebergement;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 40px;
+    border: 5px solid #0065FC;
+    margin: auto;
+}
+#populaires {
+    grid-area: populaires;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 40px;
+    border: 5px solid #0065FC; 
+    margin: auto;         
+}
+#activites {
+    grid-area: activites;
+   
+    
     
 }
-#populaires{
-    grid-area: populaires;
-}
-#activites{
-    grid-area: activites;
-}
-
+/*------------------------GALLERIES-------------------------------------*/
 #gallery {
     display: grid;
     grid-template-rows: repeat(2);
@@ -343,9 +342,9 @@ main {
     grid-template-areas: 
         "box box box"
         "box box box";
-        /*border: solid 3px black;*/
-        /*margin: 40px;
-        justify-content: center;*/
+        border: solid 3px black;
+        margin: 40px 0px;
+        /*justify-content: center;*/
 }
 #gallery2 {
     display: grid;
@@ -358,47 +357,23 @@ main {
 }
 #gallery3 {
     display: grid;
-    grid-template-rows: repeat(2);
-    grid-template-columns: repeat(4);
+    grid-gap: 40px;
+    grid-template-rows: repeat(4);
+    grid-template-columns: repeat (5,  minmax(min-content, 450px), minmax(min-content, 450px));
     grid-template-areas: 
-        "box3 box3 box3 box3"
-        ". box3 . box3";
-    border: solid 3px black;
-    
+        "box31 box32 box34 box35"
+        "box31 box32 box34 box36"
+        "box31 box33 box34 box36";    
+    margin: 30px 0px 60px 0px;
+    /*justify-content: space-between;*/
 }
-/*.box2{
-    grid-template-columns: repeat(2);
-}*/
-
-/*main - hebergement*/
-#hebergement {
-    background-color: #F2F2F2;
-    border-radius: 25px;
-    padding: 40px;
-    /*border: 5px solid #0065FC;*/
-    margin: 20px;
-
-    
-      
-}
-#hebergement h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-}
-
+/*---------------------BOXES--------------------------------------------*/
 .box{
     /*background-color: white;*/
     border-radius: 25px;
     /*border: 5px solid black;*/
-    margin: 40px 0px;
+    margin: auto;
     padding: auto;
-}
-.box img {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    width: 236px;
-    height: 114px;
-    object-fit: cover;
 }
 .box div {
     /*border: solid 3px black;*/
@@ -408,32 +383,6 @@ main {
     border-bottom-right-radius: 25px;
     line-height: 0.5;    
 }
-#hebergement h3 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-}
-
-
-
-
-/*main - populaires*/
-#populaires {
-    background-color: #F2F2F2;
-    border-radius: 25px;
-    padding: 40px;
-    border: 5px solid #0065FC; 
-    margin: 20px;
-    
-     
-}
-#populaires h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-      
-
-}
-
-
 .box2{
     /*background-color: chartreuse;*/
     border-radius: 25px;
@@ -442,6 +391,78 @@ main {
     padding: auto;
     width: 343px;
     height: 144px;
+}
+.box2 div {
+    /*border: solid 3px red;*/
+    padding: 0px;
+    line-height: 1;    
+    width: 346px;
+    height: 140px;
+    margin: 0px;
+}
+.box31 {
+    grid-area: box31;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0px 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    max-width: 450px;
+}
+.box32 {
+    grid-area: box32;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0px 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    max-width: 300px;
+}
+.box33 {
+    grid-area: box33;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0px 0px;
+    padding: 0px;
+    height: auto;
+    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    max-width: 300px;
+}
+.box34 {
+    grid-area: box34;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0px 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    max-width: 450px;
+}
+.box35 {
+    grid-area: box35;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0px 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    max-width: 300px;
+}
+.box36 {
+    grid-area: box36;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0px 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    max-width: 300px;
+}
+/*----------------------------------IMG--------------------------------*/
+.box img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+    width: 236px;
+    height: 114px;
+    object-fit: cover;
 }
 .box2 img {
     border-top-left-radius: 25px;
@@ -452,38 +473,69 @@ main {
     float: left;
     padding: 5px ;
 }
-.box2 div {
-    /*border: solid 3px red;*/
-    padding: 0px;
-    line-height: 1;    
-    width: 346px;
-    height: 140px;
-    margin: 0px;
-
+.box31 img {
+    max-width: 100%;
+    min-width: 300px;
+    height: 390px;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+}
+.box34 img{
+    max-width: 100%;
+    min-width: 300px;
+    height: 390px;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.box32 img{
+    max-width: 100%;
+    min-width: 300px;
+    height: 197px;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.box36 img{
+    max-width: 100%;
+    min-width: 300px;
+    height: 197px;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.box33 img{
+    max-width: 100%;
+    min-width: 300px;
+    height: 110px;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.box35 img{
+    max-width: 100%;
+    min-width: 300px;
+    height: 110px;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
-
-
-#activites h2 {
+/*---------------------FONTS-----------------------------------------------*/
+#hebergement h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
-
-.box3 {
-    /*background-color: chartreuse;*/
-    border-radius: 25px;
-    /*border: 5px solid black;*/
-    margin: 40px auto;
-    padding: auto;
+#hebergement h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
-.box3 img {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    width: 236px;
-    height: 114px;
-    object-fit: cover;
+#populaires h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
-
 .pop {
     display: flex;
     justify-content:space-between;
@@ -491,14 +543,19 @@ main {
 .pop i {
     margin-top: 23px;
 }
-
-
-
-
-
-
-
-/*footer*/
+#activites h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+#gallery3 h4 {
+    background-color: white;
+    border-radius: 25px;
+    margin: 0px;
+    padding: 20px 19px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+/*-----------------------FOOTER--------------------------------------------*/
 footer {
     display: flex;
     flex-flow: row ;
@@ -511,15 +568,14 @@ footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
-
 .apropos {
-    margin-right: 15%;
+    margin-right: 19%;
 }
 .noshebergements{
-    margin-right: 15%;
+    margin-right: 19%;
 }
 .assistance {
-    margin-right: 15%;
+    margin-right: 19%;
 }
 .info a {
     font-family: 'Raleway', sans-serif;
