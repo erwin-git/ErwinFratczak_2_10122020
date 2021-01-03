@@ -1,6 +1,8 @@
 /*------------------------------BODY-------------------------------------*/
 body{
-    margin: 40px 50px 50px;
+    margin: 23px 50px 0px 50px;
+    position: absolute;
+    
 }  
 /*-----------------------------HEADER------------------------------------*/
 header {
@@ -9,18 +11,24 @@ header {
     grid-template-rows: 1fr;
     grid-template-areas:
         "logo menu1";
+
 }
 #logo {
     grid-area: logo;
     justify-self: self-start;
     margin-bottom: 10px;
+    
 }
 /*-------------------------------MENU-------------------------------------*/
 /*coller les butons ensamble*/
+
 .menu1 {
+    grid-auto-flow: row;
     grid-area: menu1;
     justify-self: self-end;
-    font-size: 16px
+    align-self: center;
+    font-size: 16px;
+    
 }
 div.menu1 a:link{
     font-family: 'Raleway', sans-serif;
@@ -54,7 +62,7 @@ div.menu1 a:active{
 nav {
     display: grid;
     justify-content: start;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "slogan"
@@ -306,8 +314,8 @@ nav {
 main {
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(2);
     grid-template-areas: 
         "hebergement hebergement populaires"
         "activites activites activites ";
@@ -317,44 +325,43 @@ main {
     background-color: #F2F2F2;
     border-radius: 25px;
     padding: 40px;
-    border: 5px solid #0065FC;
-    margin: auto;
+    margin: 0px;
+    
+    
 }
 #populaires {
     grid-area: populaires;
     background-color: #F2F2F2;
     border-radius: 25px;
-    padding: 40px;
-    border: 5px solid #0065FC; 
-    margin: auto;         
+    
+    /*border: 5px solid #0065FC; */
+           
 }
 #activites {
     grid-area: activites;
-    padding: 10px;
-    border: 5px solid #0065FC;
-    margin: 0px 0px 0px 0px;
-    
 }
 /*------------------------GALLERIES-------------------------------------*/
 #gallery {
     display: grid;
-    grid-template-rows: repeat(2);
-    grid-template-columns: repeat(3);
+    grid-gap: 30px;
+    grid-template-rows: 1fr 1frs;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
         "box box box"
         "box box box";
-        border: solid 3px black;
-        margin: 40px 0px;
-        /*justify-content: center;*/
+    /*justify-content: start;*/
+
 }
 #gallery2 {
     display: grid;
+    grid-gap: 30px;
     grid-template-rows: repeat(3);
-    grid-template-columns: repeat(1);
+    grid-template-columns: repeat(1, minmax(min-content, 450px), minmax(min-content, 450px));
     grid-template-areas: 
         "box2"
         "box2"
         "box2";
+        justify-content: center;
 }
 #gallery3 {
     display: grid;
@@ -366,40 +373,45 @@ main {
         "box31 box32 box34 box36"
         "box31 box33 box34 box36";    
     margin: 30px 0px 60px 0px;
-    /*justify-content: space-between;*/
+    
 }
 /*---------------------BOXES--------------------------------------------*/
-.box{
-    /*background-color: white;*/
+.box {
+    background-color: white;
     border-radius: 25px;
-    /*border: 5px solid black;*/
-    margin: auto;
-    padding: auto;
+    margin: 0px;
+    padding: 5px;
+    /*border: solid 3px green;*/
+    box-shadow: 0px 0px 10px 2px #cbcbcb ;
+    
 }
 .box div {
     /*border: solid 3px black;*/
-    padding: 11px 11px 11px 11px;
-    margin: 0px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    line-height: 0.5;    
+    padding: 0px 0px 5px 15px;
+    margin: -10px 0px 0px 0px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    line-height: 0.1;
+    
 }
 .box2{
-    /*background-color: chartreuse;*/
+    background-color: white;
     border-radius: 25px;
-    /*border: 5px solid blue;*/
-    margin: 40px auto;
-    padding: auto;
+    /*border: 3px solid rgb(37, 39, 163);*/
+    margin: 0px 30px;
+    padding: 0px;
     width: 343px;
     height: 144px;
+    box-shadow: 0px 0px 10px 2px #cbcbcb;
 }
 .box2 div {
-    /*border: solid 3px red;*/
+    
     padding: 0px;
-    line-height: 1;    
-    width: 346px;
-    height: 140px;
+    
+    width: 342px;
+    height: 142px;
     margin: 0px;
+    
 }
 .box31 {
     grid-area: box31;
@@ -407,7 +419,7 @@ main {
     border-radius: 25px;
     margin: 0px 0px;
     padding: 0px;
-    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    box-shadow: 0px 0px 10px 2px #cbcbcb;
     max-width: 450px;
 }
 .box32 {
@@ -416,7 +428,7 @@ main {
     border-radius: 25px;
     margin: 0px 0px;
     padding: 0px;
-    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    box-shadow: 0px 0px 10px 2px #cbcbcb;
     max-width: 300px;
 }
 .box33 {
@@ -426,7 +438,7 @@ main {
     margin: 0px 0px;
     padding: 0px;
     height: auto;
-    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    box-shadow: 0px 0px 10px 2px #cbcbcb;
     max-width: 300px;
 }
 .box34 {
@@ -435,7 +447,7 @@ main {
     border-radius: 25px;
     margin: 0px 0px;
     padding: 0px;
-    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    box-shadow: 0px 0px 10px 2px #cbcbcb;
     max-width: 450px;
 }
 .box35 {
@@ -444,7 +456,7 @@ main {
     border-radius: 25px;
     margin: 0px 0px;
     padding: 0px;
-    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    box-shadow: 0px 0px 10px 2px #cbcbcb;
     max-width: 300px;
 }
 .box36 {
@@ -453,16 +465,27 @@ main {
     border-radius: 25px;
     margin: 0px 0px;
     padding: 0px;
-    box-shadow: 0px 0px 3px 2px #F2F2F2 ;
+    box-shadow: 0px 0px 10px 2px #cbcbcb;
     max-width: 300px;
 }
 /*----------------------------------IMG--------------------------------*/
 .box img {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    /*border: 5px solid red;*/
+    /*width: 100%;
+    height: 55%;*/
     width: 236px;
     height: 114px;
+/*
+    max-width: 100%;
+    min-width: 236px;
+    max-height: 100%;
+    min-height: 114px;
+*/
+
+
+    ;
     object-fit: cover;
 }
 .box2 img {
@@ -472,7 +495,10 @@ main {
     height: 134px;
     object-fit: cover;
     float: left;
-    padding: 5px ;
+    padding: auto;
+    border: 5px solid white;
+    margin-right: 15px;
+
 }
 .box31 img {
     max-width: 100%;
@@ -528,10 +554,13 @@ main {
 #hebergement h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 #hebergement h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    margin-top: 40px;
+
 }
 #populaires h2 {
     font-family: 'Raleway', sans-serif;
@@ -540,13 +569,44 @@ main {
 .pop {
     display: flex;
     justify-content:space-between;
+    margin: 35px 30px 0px 30px;
 }
 .pop i {
-    margin-top: 23px;
+    margin: 23px 0px 0px 0px;
 }
 #activites h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+}
+.box div h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.box div p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color: black;
+}
+.box2 div h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding-right: 45px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    text-align: justify;
+    
+    
+
+    
+}
+.box2 div p { 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    padding-right: 40px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: justify;
+    
 }
 #gallery3 h4 {
     background-color: white;
@@ -563,11 +623,12 @@ footer {
     flex-direction: row;
     justify-content:flex-start;
     background-color: #F2F2F2;
-    margin: 0px -50px -50px -50px;
-    padding: 50px;
+    margin: 0px -50px 0px -50px;
+    padding: 30px 50px;
     line-height: 2; 
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    
 }
 .apropos {
     margin-right: 19%;
