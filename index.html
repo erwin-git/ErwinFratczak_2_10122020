@@ -5,6 +5,7 @@
         <meta name="description" content="planification de vacances">
         <meta name="keywords" content="vacances, hébergement, activités">
         <meta name="author" content="Erwin Fratczak">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <title>Reservia</title>        
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://kit.fontawesome.com/27adaf2d33.js" crossorigin="anonymous"></script>
@@ -12,15 +13,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;600;700&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="container">
         <header>
             <!--logo-->
             <img id="logo" src="/images/logo/Reservia.svg" alt="logo de site">
 
             <!--first menu-->
-            <div class="menu1">
-                <a href="#hebergement">Hébergements</a>
-                <a href="#activites">Activités</a>
+            <div id="menu1">
+                <a id="menu11" href="#hebergement">Hébergements</a>
+                <a id="menu12" href="#activites">Activités</a>
+            </div>
+            <div id="signup">
                 <a style="color:#0065FC; font-weight:700" href="">S'inscrire</a>
             </div>
         </header>
@@ -35,8 +38,9 @@
             <!--searching bar-->
             <span id="searchingbar">
                 <i id="mapmarker" class="fas fa-map-marker-alt" ></i>
-                <input type="search" id="searchform" placeholder="Recherche ...">
+                <input type="search" id="searchform" placeholder="Marseille, France">
                 <button type="submit" id="searchbutton" value="Submit">Rechercher</button>
+                <i id="search" class="fas fa-search"></i>
             </span>
 
             <!--filters-->            
@@ -45,184 +49,202 @@
                 <div id="money">
                     <a class="btn" href="">
                     <i class="fas fa-money-bill-wave" style="font-size: 20px; color: #0065FC;"></i>Économique</a>
-                    
-                </div>
+                    </div>
 
-                <span id="kid">
+                <div id="kid">
                     <a class="btn" href="">
                     <i class="fas fa-child" style="font-size: 20px; color: #0065FC;"></i>Familial</a>
-                </span>
+                    </div>
 
-                <span id="heart">
+                <div id="heart">
                     <a class="btn" href="">
                     <i class="fas fa-heart" style="font-size: 20px; color: #0065FC;"></i>Romantique</a>
-                </span>
+                    </div>
 
-                <span id="dog">
+                <div id="dog">
                     <a class="btn" href="">
                     <i class="fas fa-dog" style="font-size: 20px; color: #0065FC;"></i>Animaux autorisés</a>
-                </span>
+                    </div>
             </div>
 
             <!--info-->
-            <span id="info">
+            <div id="info">
                 <i class="fas fa-info" style="font-size: 12px; color: #0065FC;"></i>
                 <p>Plus de 500 logement sont disponibles dans cette ville</p>
-            </span>
+            </div>
         </nav>
 
         <main>
             <!--6 images top-->
             <article id="hebergement">
-                <h2>Hébergement à Marseille</h2>
+                <h2 id="hebtitle">Hébergement à Marseille</h2>
                 <div id="gallery">
-                    <div class="box">                    
+                    <div id="box11">                    
                         <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                         <div>
                             <h4>Auberge la Cannebière</h4>
                             <p>Nuit à partir de <b>25€</b></p>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            <span>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="box">
+                    <div id="box12">
                         <img src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
                         <div>
                             <h4>Hôtel du port</h4>
                             <p>Nuit à partir de 52<b>€</b></p>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                            <span>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="box">
+                    <div id="box13">
                         <img src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
                         <div>
                             <h4>Hôtel les mouettes</h4>
                             <p>Nuit à partir de 76<b>€</b></p>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            <span>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="box">
+                    <div id="box14">
                         <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
                         <div>
                             <h4>Hôtel de la mer</h4>
                             <p>Nuit à partir de 46<b>€</b></p>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            <span>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="box">
+                    <div id="box15">
                         <img src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
                         <div>
                             <h4>Auberge Le Panier</h4>
                             <p>Nuit à partir de <b>23€</b></p>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            <span>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="box">
+                    <div id="box16">
+
                         <img src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
                         <div>
                             <h4>Hôtel chez Amina</h4>
                             <p>Nuit à partir de 96<b>€</b></p>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                            <span>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                            </span>
                         </div>
                     </div>
                 </div>
-                <h3>Afficher plus</h3>
+                <h3 id="plus">Afficher plus</h3>
                 
             </article>
 
             <!--3 images right-->
             <article id="populaires">
-                <div class="pop">
-                    <h2>Les plus populaires</h2>
+                <span class="pop">
+                    <h2 id="poptitle">Les plus populaires</h2>
                     <i class="fas fa-chart-line" style="-webkit-user-select: auto;"></i>
-                </div>
+                </span>
                 <div id="gallery2">
-                    <div class="box2">
+                    <div id="box21">
                         <img src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
                         <div>
                             <h4>Hôtel Le soleil du matin</h4>
                             <p>Nuit à partir de 128<b>€</b></p>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                            <span>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                            </span>
                         </div>
                     </div>                
-                    <div class="box2">
+                    <div id="box22">
                         <img src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
                         <div>
                             <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                             <p>Nuit à partir de 71<b>€</b></p>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            <span>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="box2">
+                    <div id="box23">
                         <img src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
                         <div>
                             <h4>Hôtel Tout bleu et Blanc</h4>
                             <p>Nuit à partir de 68<b>€</b></p>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
-                            <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            <span>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #0065FC;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F2F2F2;"></i>
+                            </span>
                         </div>
                     </div>
             </article>
 
             <!--6 images bottom-->
             <article id="activites">
-                <h2>Activités à Marseille</h2>
+                <h2 id="acttitle">Activités à Marseille</h2>
                     <div id="gallery3">                    
-                        <div class="box31">
+                        <div id="box31">
                             <img src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
                             <h4>Vieux Port</h4>
                         </div>
-                        <div class="box32">
+                        <div id="box32">
                             <img src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
                             <h4>Fort de Pomègues</h4>
                         </div>
-                        <div class="box33">
+                        <div id="box33">
                             <img src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
                             <h4>Îles du Frioul</h4>
                         </div>
-                        <div class="box34">
+                        <div id="box34">
                             <img src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
                             <h4>Parc National des Calanques</h4>
                         </div>
-                        <div class="box35">
+                        <div id="box35">
                             <img src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
                             <h4>Notre-Dame-da-la-Garde</h4>
                         </div>
-                        <div class="box36">
+                        <div id="box36">
                             <img src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
                             <h4>Parc Longchamp</h4>
                         </div>
@@ -234,7 +256,7 @@
 
         <footer>
         <!--a propos-->
-            <div class="apropos">
+            <div id="apropos">
                 <h3>A propos</h3>
                 <dl class="info">
                     <dt><a href="">Fonctionnement du site</a></dt>
@@ -244,7 +266,7 @@
             </div>
     
         <!--nos hébergements-->
-            <div class="noshebergements">
+            <div id="noshebergements">
                 <h3>Nos hébergements</h3>
                 <dl class="info">
                     <dt><a href="">Charte qualité</a></dt> 
@@ -253,7 +275,7 @@
             </div>
 
         <!--assistance-->
-            <div class="assistance">
+            <div id="assistance">
                 <h3>Assistance</h3>
                 <dl class="info">
                     <dt><a href="">Centre d'aide</a></dt> 

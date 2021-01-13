@@ -2,7 +2,6 @@
 body{
     margin: 23px 50px 0px 50px;
     position: absolute;
-    
 }  
 /*-----------------------------HEADER------------------------------------*/
 header {
@@ -20,8 +19,6 @@ header {
     
 }
 /*-------------------------------MENU-------------------------------------*/
-/*coller les butons ensamble*/
-
 .menu1 {
     grid-auto-flow: row;
     grid-area: menu1;
@@ -334,28 +331,24 @@ main {
     background-color: #F2F2F2;
     border-radius: 25px;
     
+    
     /*border: 5px solid #0065FC; */
            
 }
 #activites {
     grid-area: activites;
-<<<<<<< HEAD
-=======
-   
-    
-    
->>>>>>> 8c0ec394542b3a62c34a315eafc617753ad9ce38
 }
 /*------------------------GALLERIES-------------------------------------*/
 #gallery {
     display: grid;
     grid-gap: 30px;
-    grid-template-rows: 1fr 1frs;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: repeat (auto-fit, minmax(50%, 100%));*/
     grid-template-areas: 
         "box box box"
         "box box box";
-    /*justify-content: start;*/
+        justify-content: stretch;
 
 }
 #gallery2 {
@@ -387,12 +380,10 @@ main {
     border-radius: 25px;
     margin: 0px;
     padding: 5px;
-    /*border: solid 3px green;*/
     box-shadow: 0px 0px 10px 2px #cbcbcb ;
     
 }
 .box div {
-    /*border: solid 3px black;*/
     padding: 0px 0px 5px 15px;
     margin: -10px 0px 0px 0px;
     border-bottom-left-radius: 22px;
@@ -426,7 +417,7 @@ main {
     margin: 0px 0px;
     padding: 0px;
     box-shadow: 0px 0px 10px 2px #cbcbcb;
-    max-width: 450px;
+    max-width: 100%;
 }
 .box32 {
     grid-area: box32;
@@ -435,7 +426,7 @@ main {
     margin: 0px 0px;
     padding: 0px;
     box-shadow: 0px 0px 10px 2px #cbcbcb;
-    max-width: 300px;
+    max-width: 100%;
 }
 .box33 {
     grid-area: box33;
@@ -445,7 +436,7 @@ main {
     padding: 0px;
     height: auto;
     box-shadow: 0px 0px 10px 2px #cbcbcb;
-    max-width: 300px;
+    max-width: 100%;
 }
 .box34 {
     grid-area: box34;
@@ -454,7 +445,7 @@ main {
     margin: 0px 0px;
     padding: 0px;
     box-shadow: 0px 0px 10px 2px #cbcbcb;
-    max-width: 450px;
+    max-width: 100%;
 }
 .box35 {
     grid-area: box35;
@@ -478,20 +469,10 @@ main {
 .box img {
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
-    /*border: 5px solid red;*/
-    /*width: 100%;
-    height: 55%;*/
-    width: 236px;
+    width: 245px;
     height: 114px;
-/*
-    max-width: 100%;
-    min-width: 236px;
-    max-height: 100%;
-    min-height: 114px;
-*/
+    overflow: auto;
 
-
-    ;
     object-fit: cover;
 }
 .box2 img {
@@ -524,8 +505,8 @@ main {
     border-top-right-radius: 25px;
 }
 .box32 img{
-    max-width: 100%;
-    min-width: 300px;
+    max-width: 600px;
+    width:  300px;
     height: 197px;
     object-fit: cover;
     border-top-left-radius: 25px;
@@ -587,6 +568,7 @@ main {
 .box div h4 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    font-size: 15px;
 }
 .box div p {
     font-family: 'Raleway', sans-serif;
@@ -600,10 +582,6 @@ main {
     margin-bottom: 5px;
     margin-top: 15px;
     text-align: justify;
-    
-    
-
-    
 }
 .box2 div p { 
     font-family: 'Raleway', sans-serif;
@@ -612,7 +590,6 @@ main {
     margin-top: 0px;
     margin-bottom: 30px;
     text-align: justify;
-    
 }
 #gallery3 h4 {
     background-color: white;
@@ -651,3 +628,40 @@ footer {
     color: black;
     text-decoration: none;
 }
+/*-------------------------------Responsive---------------------------------*/
+
+@media only screen and (max-width: 500px) {
+   
+.container {
+  
+ 
+}
+
+
+
+}
+
+/*------------------------------------Desktop 4K----------------------------*/
+/*@media only screen and (min-width: 1441px) {
+    .box {
+        background-color: white;
+        border-radius: 25px;
+        margin-bottom: -10px;
+        padding: 5px;
+        border: solid 3px green;
+        box-shadow: 0px 0px 10px 2px #cbcbcb ;
+        height: 300px;
+    }
+    #gallery {
+        display: grid;
+        grid-gap: 30px;
+    }   
+    
+    
+    
+    
+    .box img {
+            width: 100%;
+            height: 88%;
+    }
+}*/
