@@ -260,6 +260,8 @@ span #searchingbar {
 
 }
 #money i {
+    font-size: 20px;
+    color: #0065FC;
     padding: 10px 8px;
     font-size: 16px;
     background: #DEEBFF;
@@ -312,6 +314,8 @@ span #searchingbar {
 
 }
 #kid i {
+    font-size: 20px;
+    color: #0065FC;
     padding: 10px 12px;
     font-size: 16px;
     background: #DEEBFF;
@@ -364,6 +368,8 @@ span #searchingbar {
 
 }
 #heart i {
+    font-size: 20px;
+    color: #0065FC;
     padding: 10px 10px;
     font-size: 16px;
     background: #DEEBFF;
@@ -416,6 +422,8 @@ span #searchingbar {
 
 }
 #dog i {
+    font-size: 20px;
+    color: #0065FC;
     padding: 10px;
     font-size: 16px;
     background: #DEEBFF;
@@ -465,6 +473,8 @@ span #searchingbar {
     margin: 20px 0px 0px 0px;
 }
 #info i {
+    font-size: 12px;
+    color: #0065FC;
     border-radius: 100%;
     border: 2px solid #F2F2F2;
     padding: 6px 9px 6px 9px;
@@ -485,6 +495,14 @@ main {
     grid-column: 1/ 5;
     grid-row: 6/14;
     grid-gap: 30px;
+}
+i.fa-star.bstar {
+    font-size: 10px;
+    color: #0065FC
+}
+i.fa-star.gstar {
+    font-size: 10px;
+    color: #F2F2F2
 }
 /*---------------------GALLERY1--------------------------------------------*/
 #hebergement {
@@ -865,6 +883,7 @@ main {
     background-color: red;
     margin: 0px;
     padding: 0px;
+    -webkit-user-select: auto;
 }
 #gallery2 {
     display: grid;
@@ -1311,7 +1330,7 @@ footer {
     grid-row: 14/15;
     margin: 0px -50px 0px -50px;
     padding: 30px 50px; 
-    background-color: #F2F2F2;
+      background-color: #F2F2F2;
 }
 
 #apropos {
@@ -1999,9 +2018,10 @@ footer {
     grid-template-columns: 339px 339px;
     grid-template-rows: repeat(2, 144px);
     grid-gap: 30px;
-    padding: 30px 30px;
+    padding: 20px 0px;
     margin: 0px;  
     width: 768px;
+    justify-content: center;
 }
 #box21 {
     display: grid;
@@ -2217,6 +2237,7 @@ footer {
     grid-row: 5/8;
 }
 footer {
-    padding: 0px 70px;
+    padding: 0px 0px 0px 20px;
+    margin: 0px;
 }
 }
