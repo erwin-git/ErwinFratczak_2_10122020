@@ -160,16 +160,17 @@ nav {
 }
 /*-------------------------SEARCHING---------------------------------------*/
 span #searchingbar {
-    /*display: grid;*/
+    display: grid;
     grid-area: nav;
     grid-row: 2/3;
     grid-column: 1/2;
+    
 }
 
 
 #searchingbar {
     margin: 0px 0px;
-    padding: 30px 0px;
+    padding: 20px 0px;
     background-color: indigo;
 
 }
@@ -234,7 +235,7 @@ span #searchingbar {
     grid-auto-flow: column dense;
     padding: 15px 0px;
     grid-auto-flow: column dense;
-
+    background-color: khaki;
 }
 #filter h3{
     font-size: 18px;
@@ -252,28 +253,28 @@ span #searchingbar {
     float: left;
     transition: transform 0.1s;
     background-color: brown;
-    height: 50px;
-    width: 190px;
+    height: 40px;
+    width: 170px;
     border: 4px solid #F2F2F2;
     padding: 1px;
 
 }
 #money i {
-    padding: 15px 14px;
+    padding: 10px 8px;
     font-size: 16px;
     background: #DEEBFF;
     transform: translate(-40%);
     border-radius: 80px; 
-    margin: -4px -15px -4px -6px;
+    margin: -4px -15px -4px -10px;
     /*border: 4px solid #DEEBFF;*/
     border: 4px solid black;
     background-color: green;
 
 }
 #money a {
-    margin: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 10px;
     padding: 0px 0px 0px 15px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-decoration: none;
@@ -288,8 +289,7 @@ span #searchingbar {
     float: left;
     transition: transform 0.1s;
     background-color: brown;
-    height: 50px;
-    width: 190px;
+
     border: 4px solid #F2F2F2;
     padding: 1px;
     box-shadow: 0px 0px 15px 5px #0065FC ;
@@ -305,19 +305,19 @@ span #searchingbar {
     float: left;
     transition: transform 0.1s;
     background-color: brown;
-    height: 50px;
-    width: 150px;
+    height: 40px;
+    width: 130px;
     border: 4px solid #F2F2F2;
     padding: 1px;
 
 }
 #kid i {
-    padding: 15px 19px;
+    padding: 10px 12px;
     font-size: 16px;
     background: #DEEBFF;
     transform: translate(-40%);
     border-radius: 80px; 
-    margin: -4px -15px -4px -6px;
+    margin: -4px -15px -4px -11px;
     /*border: 4px solid #DEEBFF;*/
     border: 4px solid black;
     background-color: green;
@@ -326,7 +326,7 @@ span #searchingbar {
 #kid a {
     margin: 0px 10px 0px 10px;
     padding: 0px 0px 0px 15px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-decoration: none;
@@ -357,19 +357,19 @@ span #searchingbar {
     float: left;
     transition: transform 0.1s;
     background-color: brown;
-    height: 50px;
-    width: 190px;
+    height: 40px;
+    width: 160px;
     border: 4px solid #F2F2F2;
     padding: 1px;
 
 }
 #heart i {
-    padding: 15px 17px;
+    padding: 10px 10px;
     font-size: 16px;
     background: #DEEBFF;
     transform: translate(-40%);
     border-radius: 80px; 
-    margin: -4px -15px -4px -6px;
+    margin: -4px -15px -4px -11px;
     /*border: 4px solid #DEEBFF;*/
     border: 4px solid black;
     background-color: green;
@@ -378,7 +378,7 @@ span #searchingbar {
 #heart a {
     margin: 0px 10px 0px 10px;
     padding: 0px 0px 0px 15px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-decoration: none;
@@ -393,8 +393,7 @@ span #searchingbar {
     float: left;
     transition: transform 0.1s;
     background-color: brown;
-    height: 50px;
-    width: 190px;
+  
     border: 4px solid #F2F2F2;
     padding: 1px;
     box-shadow: 0px 0px 15px 5px #0065FC ;
@@ -410,19 +409,19 @@ span #searchingbar {
     float: left;
     transition: transform 0.1s;
     background-color: brown;
-    height: 50px;
-    width: 240px;
+    height: 40px;
+    width: 215px;
     border: 4px solid #F2F2F2;
     padding: 1px;
 
 }
 #dog i {
-    padding: 15px;
+    padding: 10px;
     font-size: 16px;
     background: #DEEBFF;
     transform: translate(-40%);
     border-radius: 80px; 
-    margin: -4px -15px -4px -6px;
+    margin: -4px -15px -4px -11px;
     /*border: 4px solid #DEEBFF;*/
     border: 4px solid black;
     background-color: green;
@@ -431,7 +430,7 @@ span #searchingbar {
 #dog a {
     margin: 0px 10px 0px 10px;
     padding: 0px 0px 0px 15px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-decoration: none;
@@ -446,8 +445,7 @@ span #searchingbar {
     float: left;
     transition: transform 0.1s;
     background-color: brown;
-    height: 50px;
-    width: 240px;
+
     border: 4px solid #F2F2F2;
     padding: 1px;
     box-shadow: 0px 0px 15px 5px #0065FC ;
@@ -463,8 +461,6 @@ span #searchingbar {
     grid-row: 4/5;
     grid-column: 1/span 5;
     padding: 15px 0px;
-}
-#info {
     display:inline-block;
     margin: 20px 0px 0px 0px;
 }
@@ -1558,9 +1554,10 @@ nav {
     grid-row: 3/4;
     grid-column: 1/2;
     grid-auto-flow: dense;
-    grid-template-columns: 167px 167px;
-    /*gap: 10px;*/
-    margin: 20px;
+    grid-template-columns: 183px 142px;
+    gap: 10px;
+    margin: 0px 20px;
+    width: 335px;
 }
 #money {
     grid-column: 1/2;
@@ -1589,45 +1586,48 @@ nav {
     background-color: #800080;
     grid-row: 4/5;
     grid-column: 1/2;
-    margin: 30px 20px;
-    padding: 0px ;
-    grid-template-columns: 25px 320px;
-    grid-template-rows: 30px 25px;
+    margin: 10px 20px;
+    padding: 0px 0px 20px 0px;
+    grid-template-columns: 40px 300px;
+    grid-template-rows: 40px;
+    gap: 5px;
+    width: 335px;
+}
+#info i {
+    grid-column: 1/2;
+    padding: 5px 12px 18px 9px;
+    margin: 10px 10px;
     
+}
+#info p {
+    grid-column: 2/3;
+    margin: 0px;
+    padding: 12px 0px 0px 0px;
 
-}
-#infobar i {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    border-radius: 100%;
-    border: 2px solid #F2F2F2;
-    padding: 0px 9px 0px 9px;
-    display: inline;
-    margin-right: 0px;
-    
-    
-}
-#infobar p {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    
-    
+
 }
 /*-----------------------------MAIN-MOB-----------------------------------------*/
 main {
+    display: grid;
     /*grid-area: main;*/
     background-color: #32de84;
     grid-column: 1/2;
     grid-row: 3/4;
+    padding: 0px;
+    margin: 0px;
+    grid-gap: 5px;
 }
-/*---------------------GALLERY2------------------------------*/
+/*---------------------GALLERY2-MOB-----------------------------*/
 #populaires {
     display: grid;
     /*grid-area: main;*/
-    background-color: #00563B;
+    background-color: red;
     grid-column: 1/2;
     grid-row: 1/2;
-
+    width: 335px;
+    padding: 40px 20px;
+    margin: 0px;
+    border-radius: 0px;
 }
 .pop {
     display: grid;
@@ -1635,6 +1635,7 @@ main {
     background-color: #ACE1AF;
     grid-column: 1/2;
     grid-row: 1/2;
+    padding: 25px 0px;
 }
 #poptitle {
     display: grid;
@@ -1656,45 +1657,80 @@ main {
     grid-column: 1/2;
     grid-row: 2/3;
     grid-template-columns: 336px;
+    /*width: 335px;*/
+    padding: 0px;
+    margin: 0px;
+    grid-gap: 10px;
 
 }
 #box21 {
-    
+    display: grid;
     background-color: #008B8B;
-    grid-column: 1/2;
-    grid-row: 1/2;
+
+    width: 320px;
 }
+#box21 div {
+    grid-column: 2/3;
+    width: auto;
+}
+#box21 img {
+    grid-column: 1/2;
+    width: 127px;
+}
+/*--------------------------------------------------*/
 #box22 {
-    
-    background-color: #006400;
-    grid-column: 1/2;
-    grid-row: 2/3;
+    display: grid;
+    background-color: #008B8B;
+
+    width: 320px;
 }
+#box22 div {
+    grid-column: 2/3;
+    width: auto;
+}
+#box22 img {
+    grid-column: 1/2;
+    width: 127px;
+}
+/*--------------------------------------------------*/
 #box23 {
-    
-    background-color: #4A5D23;
-    grid-column: 1/2;
-    grid-row: 3/4;
+    display: grid;
+    background-color: #008B8B;
+
+    width: 320px;
 }
-/*-----------------------GALLERY1---------------------------*/
+#box23 div {
+    grid-column: 2/3;
+    width: auto;
+}
+#box23 img {
+    grid-column: 1/2;
+    width: 127px;
+}
+/*-----------------------GALLERY1-MOB--------------------------*/
 #hebergement {
     grid-area: main;
     background-color: #8F9779;
     grid-column: 1/2;
     grid-row: 2/3;
+    width: 335px;
+    padding: 20px 20px;
+    margin: 0px;
+    border-radius: 0px;
 }
 #hebtitle {
     grid-area: main;
     background-color: #87A96B;
     grid-column: 1/2;
     grid-row: 1/2;
+    padding: 25px 0px;
 }
 #gallery {
     grid-area: main;
     background-color: #568203;
     grid-column: 1/2;
     grid-row: 2/3;
-    grid-gap: 30px 0px;
+    grid-gap: 10px 0px;
     grid-template-columns: 336px;
 }
 #box11 {
@@ -1702,56 +1738,68 @@ main {
     background-color: #568569;
     grid-column: 1/2;
     grid-row: 1/2;
+    height: 200px;
 }
 #box12 {
     grid-area: main;
     background-color: #006A4E;
     grid-column: 1/2;
     grid-row: 2/3;
+    height: 200px;
 }
 #box13 {
     grid-area: main;
     background-color: #66FF00;
     grid-column: 1/2;
     grid-row: 3/4;
+    height: 200px;
 }
 #box14 {
     grid-area: main;
     background-color: #4FFFB0;
     grid-column: 1/2;
     grid-row: 4/5;
+    height: 200px;
 }
 #box15 {
     grid-area: main;
     background-color: #1B4D3E;
     grid-column: 1/2;
     grid-row: 5/6;
+    height: 200px;
 }
 #box16 {
     grid-area: main;
     background-color: #17B169;
     grid-column: 1/2;
     grid-row: 6/7;
+    height: 200px;
 }
 #plus {
     grid-area: main;
     background-color: #17B169;
     grid-column: 1/2;
     grid-row: 3/4;
+    padding: 20px 20px;
 }
-/*--------------------GALLERY3-------------------------------*/
+/*--------------------GALLERY3-MOB------------------------------*/
 #activites {
     display: grid;
     /*grid-area: main;*/
-    background-color: #556B2F;
+    background-color: yellowgreen;
     grid-column: 1/2;
     grid-row: 3/4;
+    width: 335px;
+    padding: 40px 20px;
+    margin: 0px;
 }
 #acttitle {
     grid-area: main;
     background-color: #03C03C;
     grid-column: 1/2;
     grid-row: 1/2;
+    padding: 25px 0px;
+    margin: 0px;
 }
 #gallery3 {
     grid-area: main;
@@ -1759,52 +1807,83 @@ main {
     grid-column: 1/2;
     grid-row: 2/3;
     grid-template-columns: 336px;
+    grid-gap: 10px 0px;
+    
 }
 #box31 {
     grid-area: main;
     background-color: #00693E;
     grid-column: 1/2;
     grid-row: 1/2;
-    
+    height: 200px;
+}
+#box31 img {
+    grid-column: 1/2;
+    height: 140px;
 }
 #box32 {
     grid-area: main;
     background-color: #004953;
     grid-column: 1/2;
     grid-row: 2/3;
+    height: 200px;
+}
+#box32 img {
+    grid-column: 1/2;
+    height: 140px;
 }
 #box33 {
     grid-area: main;
     background-color: #50C878;
     grid-column: 1/2;
     grid-row: 3/4;
+    height: 200px;
+}
+#box33 img {
+    grid-column: 1/2;
+    height: 140px;
 }
 #box34 {
     grid-area: main;
     background-color: #00FF40;
     grid-column: 1/2;
     grid-row: 4/5;
+    height: 200px;
+}
+#box34 img {
+    grid-column: 1/2;
+    height: 140px;
 }
 #box35 {
     grid-area: main;
     background-color: #4D5D53;
     grid-column: 1/2;
     grid-row: 5/6;
+    height: 200px;
+}
+#box35 img {
+    grid-column: 1/2;
+    height: 140px;
 }
 #box36 {
     grid-area: main;
     background-color: red;
     grid-column: 1/2;
     grid-row: 6/7;
+    height: 200px;
 }
-/*--------------------FOOTER---------------------------------*/
+#box36 img {
+    grid-column: 1/2;
+    height: 140px;
+}
+/*--------------------FOOTER-MOB--------------------------------*/
 footer {
     grid-area: footer;
     background-color: #AA0000;
     grid-column: 1/2;
     grid-row: 4/5;
     margin: 0px;
-    padding: 0px;
+    padding: 20px 20px;
 }
 #apropos {
     grid-area: footer;
