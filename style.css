@@ -187,8 +187,11 @@ span #searchingbar {
     height: 10px;
     width: 15px;
 }
-::placeholder {
+input::-webkit-input-placeholder {
     color: black;
+  }
+  ::-moz-placeholder {
+      color: black;
   }
 #searchform {
     border: 1px solid #F2F2F2;
@@ -233,7 +236,7 @@ span #searchingbar {
     grid-row: 3/4;
     grid-column: 1/2;
     grid-auto-flow: column dense;
-    padding: 0px;
+    padding: 20px;
     
     background-color: khaki;
 }
@@ -242,7 +245,7 @@ span #searchingbar {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     float: left; 
-    margin-right: 20px;
+    margin-right: 0px;
 }
 /*-------------------------------------------------------*/
 #money {
@@ -253,7 +256,7 @@ span #searchingbar {
     float: left;
     transition: transform 0.1s;
     background-color: brown;
-    height: 40px;
+    height: 36px;
     width: 170px;
     border: 4px solid #F2F2F2;
     padding: 1px;
@@ -267,7 +270,7 @@ span #searchingbar {
     background: #DEEBFF;
     transform: translate(-40%);
     border-radius: 80px; 
-    margin: -4px -15px -4px -10px;
+    margin: -4px -15px -4px -12px;
     /*border: 4px solid #DEEBFF;*/
     border: 4px solid black;
     background-color: green;
@@ -284,7 +287,7 @@ span #searchingbar {
     background-color: yellow;
 }
 #money:hover  {
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     background: transparent;
     border: hidden;
     border-radius: 80px;
@@ -307,7 +310,7 @@ span #searchingbar {
     float: left;
     transition: transform 0.1s;
     background-color: brown;
-    height: 40px;
+    height: 36px;
     width: 130px;
     border: 4px solid #F2F2F2;
     padding: 1px;
@@ -321,7 +324,7 @@ span #searchingbar {
     background: #DEEBFF;
     transform: translate(-40%);
     border-radius: 80px; 
-    margin: -4px -15px -4px -11px;
+    margin: -4px -15px -4px -12px;
     /*border: 4px solid #DEEBFF;*/
     border: 4px solid black;
     background-color: green;
@@ -338,7 +341,7 @@ span #searchingbar {
     background-color: yellow;
 }
 #kid:hover  {
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     background: transparent;
     border: hidden;
     border-radius: 80px;
@@ -361,7 +364,7 @@ span #searchingbar {
     float: left;
     transition: transform 0.1s;
     background-color: brown;
-    height: 40px;
+    height: 36px;
     width: 160px;
     border: 4px solid #F2F2F2;
     padding: 1px;
@@ -375,7 +378,7 @@ span #searchingbar {
     background: #DEEBFF;
     transform: translate(-40%);
     border-radius: 80px; 
-    margin: -4px -15px -4px -11px;
+    margin: -4px -15px -4px -12px;
     /*border: 4px solid #DEEBFF;*/
     border: 4px solid black;
     background-color: green;
@@ -392,7 +395,7 @@ span #searchingbar {
     background-color: yellow;
 }
 #heart:hover  {
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     background: transparent;
     border: hidden;
     border-radius: 80px;
@@ -415,7 +418,7 @@ span #searchingbar {
     float: left;
     transition: transform 0.1s;
     background-color: brown;
-    height: 40px;
+    height: 36px;
     width: 215px;
     border: 4px solid #F2F2F2;
     padding: 1px;
@@ -429,7 +432,7 @@ span #searchingbar {
     background: #DEEBFF;
     transform: translate(-40%);
     border-radius: 80px; 
-    margin: -4px -15px -4px -11px;
+    margin: -4px -15px -4px -12px;
     /*border: 4px solid #DEEBFF;*/
     border: 4px solid black;
     background-color: green;
@@ -446,7 +449,7 @@ span #searchingbar {
     background-color: yellow;
 }
 #dog:hover  {
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     background: transparent;
     border: hidden;
     border-radius: 80px;
@@ -587,8 +590,8 @@ i.fa-star.gstar {
     border-top-right-radius: 22px;
     /*width: 236px;
     height: 114px;*/
-    height:100%;
     width: 100%;
+    height: 125px;
     object-fit: cover;
     /*border: 3px solid red;*/
 }
@@ -635,7 +638,7 @@ i.fa-star.gstar {
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
     width: 100%;
-    height: 100%;
+    height: 125px;
     overflow: auto;
     object-fit: cover;
     /*border: 3px solid red;*/
@@ -679,7 +682,7 @@ i.fa-star.gstar {
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
     width: 100%;
-    height: 100%;
+    height: 125px;
     overflow: auto;
     object-fit: cover;
     /*border: 3px solid red;*/
@@ -722,7 +725,7 @@ i.fa-star.gstar {
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
     width: 100%;
-    height: 100%;
+    height: 125px;
     overflow: auto;
     object-fit: cover;
     /*border: 3px solid red;*/
@@ -767,9 +770,8 @@ i.fa-star.gstar {
     grid-row: 1/2;
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
-    width: 245px;
     width: 100%;
-    height: 100%;
+    height: 125px;
     object-fit: cover;
     /*border: 3px solid red;*/
 }
@@ -803,7 +805,7 @@ i.fa-star.gstar {
     grid-gap: 5px;
 }
 #box16 img {
-    /*display: grid;*/
+    display: grid;
     /*grid-area: main;*/
     background-color: #568569;
     grid-column: 1/2;
@@ -811,13 +813,14 @@ i.fa-star.gstar {
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
     width: 100%;
-    height: 100%;
+    height: 125px;/*--------------------------------*/
     overflow: auto;
     object-fit: cover;
     /*border: 3px solid red;*/
+    
 }
 #box16 div {
-    /*display: grid;*/
+    display: grid;
     /*grid-area: main;*/
     height: 100%;
     background-color: #568569;
@@ -828,6 +831,8 @@ i.fa-star.gstar {
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
     line-height: 0.1;
+    
+    
 }
 #plus {
     /*display: grid;*/
@@ -1367,7 +1372,7 @@ footer {
     text-decoration: none;
 }
 /*-----------------------------------MOBILE------------------------------*/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 374px) {
     body {
         margin: 20px;
     }
@@ -1575,7 +1580,7 @@ nav {
     grid-auto-flow: dense;
     grid-template-columns: 183px 142px;
     gap: 10px;
-    margin: 0px 20px;
+    margin: 0px 0px ;
     width: 335px;
 }
 #money {
@@ -1924,7 +1929,7 @@ footer {
 }
 }
 /*-----------------------------------TABLETTE------------------------------*/
-@media only screen and (max-width: 768px ) and (min-width: 374px) {
+@media only screen and (max-width: 768px ) and (min-width: 375px) {
 
 .container {
     display: grid;
@@ -2072,7 +2077,7 @@ footer {
     grid-column: 1/2;
     grid-row: 1/2;
     padding: 0px;
-    height:100%;
+    height:170px;
     width: 100%;
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
@@ -2127,6 +2132,9 @@ footer {
     grid-gap: 30px;
     margin: 0px;
     padding: 0px 30px;
+}
+#gallery img {
+    height: 110px;
 }
 #box11 {
     display: grid;
