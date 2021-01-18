@@ -1205,11 +1205,15 @@ footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
-.info a {
+dd a {
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     color: black;
     text-decoration: none;
+    margin-left: -25px;
+}
+dt {
+    margin-left: 15px;
 }
 /*-----------------------------------MOBILE------------------------------*/
 @media only screen and (max-width: 375px) {
