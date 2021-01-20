@@ -1223,6 +1223,7 @@ dt {
     .container {
         display: grid;
         height: 150vh;
+        width: 375px;
         grid-template-columns: 375px ;
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
@@ -1376,7 +1377,7 @@ nav {
     grid-column: 1/2;
 }
 #searchbutton {
-    visibility: hidden; 
+    display: none; 
     grid-row: 1/2;
     grid-column: 3/4;
 }
