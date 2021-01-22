@@ -138,7 +138,7 @@ nav {
     grid-column: 1/ span 5;
     height: 50px;
 }
-#slogan h2{
+#slogan h1{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     margin: 0px;
